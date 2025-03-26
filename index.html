@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jurnal Refleksi Harian</title>
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-2xl mx-auto p-6 bg-white rounded-xl shadow-md mt-10">
+    <h2 class="text-2xl font-semibold mb-4">Jurnal Refleksi Harian</h2>
+    <form id="refleksiForm" class="space-y-4">
+      <input type="date" name="tanggal" class="w-full border p-2 rounded" required />
+      <input type="number" name="skor_perasaan" placeholder="Perasaan Hari Ini (1-10)" class="w-full border p-2 rounded" min="1" max="10" required />
+      <input type="text" name="emosi" placeholder="Emosi yang Dirasakan" class="w-full border p-2 rounded" required />
+      <textarea name="pemicu" placeholder="Pemicu Emosi" class="w-full border p-2 rounded" required></textarea>
+      <textarea name="reaksi" placeholder="Reaksi Saya" class="w-full border p-2 rounded"></textarea>
+      <textarea name="positif" placeholder="Hal Positif yang Terjadi Hari Ini" class="w-full border p-2 rounded"></textarea>
+      <textarea name="pelajaran" placeholder="Pelajaran Hari Ini" class="w-full border p-2 rounded"></textarea>
+      <textarea name="rencana_besok" placeholder="Apa yang Bisa Saya Lakukan Besok?" class="w-full border p-2 rounded"></textarea>
+      <textarea name="catatan" placeholder="Catatan Tambahan" class="w-full border p-2 rounded"></textarea>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Simpan</button>
+    </form>
+    <div id="statusMsg" class="mt-4 text-sm"></div>
+  </div>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>
